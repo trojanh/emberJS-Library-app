@@ -1,0 +1,29 @@
+{{outlet}}<div class="jumbotron text-center">
+<h1>Contact Us</h1>
+
+<br/><br/>
+
+
+
+<div class="form-horizontal form-group form-group-lg row">
+	<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
+		{{input type="email" value=emailAddress class="form-control" placeholder="Enter your e-mail address." autofocus="autofocus"}}
+	</div>
+
+	<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
+		
+		{{textarea class="form-control" placeholder="Your message. (At least 5 characters.)" rows="7" value=message disabled=isDisabled}}
+
+	</div>
+	<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
+		<button class="btn btn-success" {{action 'sendMessage'}} disabled="{{unless isValidButton 'disabled'}}">Send Message</button>
+	</div>
+</div>
+
+{{#if responseMessage}}
+<div class="alert alert-success">{{responseMessage}}</div>
+{{/if}}
+
+<br/><br/>
+
+</div>
