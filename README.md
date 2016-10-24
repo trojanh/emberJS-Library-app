@@ -1,7 +1,7 @@
 # Library-app
 
 This is a sample application Ember using Firebase as DB. 
-Do check out the working application hosted on Firebase at [this link](https://emberjs-f250a.firebaseapp.com/)
+Do check out the working application hosted on Firebase on [this link](https://emberjs-f250a.firebaseapp.com/)
 
 ## Prerequisites
 
