@@ -1,7 +1,7 @@
 # Library-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a sample application Ember using Firebase as DB. 
+Do check out the working application hosted on Firebase at [this link](https://emberjs-f250a.firebaseapp.com/)
 
 ## Prerequisites
 
