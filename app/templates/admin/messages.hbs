@@ -6,15 +6,17 @@
 			<th>ID</th>
 			<th>E-mail</th>
 			<th>Message</th>
-		</tr>
-	</thead>
-	<tbody>
-		{{#each model as |messages|}}
-		<tr>
-			<th>{{messages.id}}</th>
-			<td>{{messages.email}}</td>
-			<td>{{messages.message}}</td>
-		</tr>
-		{{/each}}
-	</tbody>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |message|}}
+    <tr>
+     <th>{{message.id}}</th>
+     <td>{{message.email}}</td>
+     <td>{{message.message}}</td>
+     <td><button class="btn btn-danger btn-xs" {{action 'deleteMessage' message}}>Delete</button></td>
+   </tr>
+   {{/each}}
+ </tbody>
 </table>
